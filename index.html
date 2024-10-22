@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+
+    <div class="wrapper">
+         
+        <h1>WEATHER APP</h1>
+
+            <div class="tab-container">
+                <p class="tab" data-userWeather>Your Weather</p>
+                <p class="tab" data-searchWeather>Search Weather</p>
+            </div>
+            
+            <div class="weather-container">
+
+                <!-- grant-location-container -->
+                <div class="sub-container grant-location-container">
+
+                    <div class="">
+                        <img src="./images/location.png" height="80" width="80" loading="lazy" alt="">
+                    </div>
+    
+                    <p>Grant Location Access</p>
+                    <p>Allow Access To Get Weather information</p>
+    
+                    <!-- <div class="access-button"> -->
+                        <button class="btn" data-grantAccess>GRANT ACCESS</button>
+                    <!-- </div> -->
+                    
+                </div>
+
+
+
+                <!-- search-location -->
+
+                <!-- <div class="form-container" data-searchForm> -->
+
+                    <form class="form-container" data-searchForm>
+                        <!-- <label for="search"> -->
+                            <input placeholder="Search for city..." id="search"  data-searchInput>
+
+                        <!-- </label> -->
+
+                        <button class="btn" type="submit">
+                            <img src="./images/search.png" height="20" width="20" loading="lazy" >
+                        </button>
+                    </form>
+
+                <!-- </div> -->
+
+
+
+                <!-- loading-screen -->
+
+                <div class="sub-container loading-container">
+
+                    <div class="img">
+                        <img src="./images/loading.gif" height="150" width="150" loading="lazy" alt="">
+                    </div>
+
+                    <p>Loading</p>
+                </div>
+
+
+
+                <!-- current-location -->
+
+                <div class="sub-container user-info-container">
+
+                    <!-- city and flag -->
+                    <div class="name">
+                        <div class="data-cityName" data-cityName></div>
+                        <img class="country-Icon" data-countryIcon>
+                    </div>
+        
+                    <!-- weather-discription -->
+                    <div class="weather-discription"  data-weatherDesc></div>
+                    <!-- weather-icon -->
+                    <img class="weather-image"  data-weatherIcon>
+
+
+        
+                    <div class="temperature" data-temp></div>
+                    
+        
+                    <div class="parameter-container">
+
+                        <div class="parameter">
+                            <img src="./images/wind.png" alt="">
+                            <p>WIND SPEED</p>
+                            <p data-windspeed></p>
+                        </div>
+
+                        <div class="parameter">
+                            <img src="./images/humidity.png" alt="">
+                            <p>HUMIDITY</p>
+                            <p data-humidity></p>
+                        </div>
+
+                        <div class="parameter">
+                            <img src="./images/cloud.png" alt="">
+                            <p>CLOUDS</p>
+                            <p data-cloudiness></p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Not found image -->
+
+                <div class="Not-found">
+                    <img src="./images/not-found.png" height="400" width="400" alt="">
+                </div>
+
+
+
+            </div>
+
+
+        
+
+    </div>
+
+
+
+    <!-- <script src="./REALCODE/index.js"></script> -->
+     <script src="script.js"></script>
+</body>
+</html>
